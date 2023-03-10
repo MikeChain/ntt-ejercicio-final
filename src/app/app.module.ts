@@ -1,6 +1,11 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { HttpClientModule } from "@angular/common/http";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatSortModule } from "@angular/material/sort";
+import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -17,7 +22,16 @@ import { NotFoundComponent } from "./components/notFound/notFound.component";
     ContactComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatToolbarModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatPaginatorModule,
+    MatTableModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSortModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
