@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    color: white;
+    outline: none;
+    text-decoration: none;
+  }
+}
